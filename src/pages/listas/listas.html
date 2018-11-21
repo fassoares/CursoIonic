@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>listas de opções</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Lista simples de cores</h2>
+  <ion-list>
+    <ion-item>Azul</ion-item>
+    <ion-item>Amarelo</ion-item>
+    <ion-item>Verde</ion-item>
+    <ion-item>Vermelho</ion-item>
+  </ion-list>
+  <h2>Lista agrupada</h2>
+  <ion-list no-lines>
+    <ion-item-group>
+      <ion-item-divider color='destacar'>Profissional</ion-item-divider>
+      <ion-item>Superior
+          <ion-badge item-end color="observation">23765</ion-badge>          
+      </ion-item>
+      <ion-item>Médio
+          <ion-badge item-end color="observation">21976</ion-badge>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+  <h2>Lista incrementada por um array</h2>
+  <ion-list>
+    <ion-item *ngFor='let item of itens' (click)='selecionarItem(item)'>{{item}} </ion-item>
+  </ion-list>
+</ion-content>

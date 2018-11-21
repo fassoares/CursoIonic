@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>formatação de data no IONIC</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Data Inicial</ion-label>
+    <ion-datetime displayFormat="DD MM  YYYY" [(ngModel)]="datas.dia"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data Inicial dia da semana</ion-label>
+    <ion-datetime displayFormat="DDD MMM  YYYY" [(ngModel)]="datas.dia2"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data Inicial dia da semana</ion-label>
+    <ion-datetime displayFormat="DDDD MMMM  YYYY" [(ngModel)]="datas.dia3"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hora formatos</ion-label>
+    <ion-datetime displayFormat="h:mm:ss A" pickerFormat="h mm ss A" [(ngModel)]="datas.horaInicio"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hora formato 24 horas</ion-label>
+    <ion-datetime displayFormat="HH:mm:ss" pickerFormat="HH mm ss" [(ngModel)]="datas.horafinal"></ion-datetime>
+  </ion-item>
+</ion-content>

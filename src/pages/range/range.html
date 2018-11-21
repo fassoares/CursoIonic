@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Range - Define intervalo máximo e mínimo de uma variável</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+  <ion-label>Calabreza R${{valorPizza}},00</ion-label>
+  <ion-range min="0" max="100" [(ngModel)]="valorPizza" color='dark'>
+    <ion-icon range-left small name="pizza"></ion-icon>
+    <ion-icon range-right name="pizza"></ion-icon>
+  </ion-range>
+</ion-item>
+<ion-item>
+  <ion-label>Suco {{mlSuco}}ml</ion-label>
+  <ion-range min="150" max="1000" step = 150, [(ngModel)]="mlSuco" color='secondary'>
+    <ion-icon range-left small name="cafe"></ion-icon>
+    <ion-icon range-right small name="cafe"></ion-icon>
+  </ion-range>
+</ion-item>
+<ion-item >
+  <ion-label>Garrafa de vinho {{grfVinho}} und </ion-label>
+    <ion-range min="0" max="30" step="3" snaps="true" [(ngModel)]="grfVinho">
+      <ion-icon range-left small name="wine"></ion-icon>
+      <ion-icon range-right name="wine"></ion-icon>
+    </ion-range>
+</ion-item>
+<ion-item>
+  <ion-label>Criança {{vlIdadeIntervalo.lower}} - {{vlIdadeIntervalo.upper}} idade</ion-label>  
+    <ion-range dualKnobs="true" pin = "true" [(ngModel)]="vlIdadeIntervalo" color="danger">
+      <ion-icon range-left small name="body"></ion-icon>
+      <ion-icon range-right name="body"></ion-icon>
+    </ion-range>
+</ion-item>
+
+</ion-content>

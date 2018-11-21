@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Toggles -  boões de ativação lateral</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  ativo:{{verTV}}
+<ion-list>
+  <ion-item>
+    <ion-label>Ativo</ion-label>
+    <ion-toggle></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>ver TV</ion-label>
+    <ion-toggle color='dark' checked='true' [(ngModel)]="verTV"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Habilitar</ion-label>
+    <ion-toggle color='danger' ></ion-toggle>
+  </ion-item>>
+
+</ion-list>
+</ion-content>
