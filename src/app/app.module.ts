@@ -1,3 +1,4 @@
+import { ToastPage } from './../pages/toast/toast';
 import { LoadingPage } from './../pages/loading/loading';
 import { TogglesPage } from './../pages/toggles/toggles';
 import { InputsPage } from './../pages/inputs/inputs';
@@ -70,6 +71,7 @@ import { ListasPage } from '../pages/listas/listas';
     ListasPage,
     TogglesPage,
     LoadingPage,
+    ToastPage
   ],
   providers: [
     StatusBar,

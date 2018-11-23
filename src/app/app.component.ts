@@ -1,3 +1,4 @@
+import { ToastPage } from './../pages/toast/toast';
 import { LoadingPage } from './../pages/loading/loading';
 
 
@@ -57,6 +58,8 @@ export class MyApp {
       { title: "Lista de opções",component:ListasPage},
       { title: "Toggles Component", component:TogglesPage},
       { title: 'Loding Controler', component:LoadingPage},
+      { title: 'Toast Controler', component:ToastPage},
+
     ];
 
   }
